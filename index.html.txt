@@ -1,0 +1,1 @@
+<a href="../projet_1/index.html"> Aller a la page de garde </a>
