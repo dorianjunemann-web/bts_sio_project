@@ -21,11 +21,10 @@ main {
 h1, h2 {
     color: #084d6b;
     margin-bottom: 20px;
+    width: 100%;
 }
 
-.moitie {
-    width: 46%;
-}
+
 
 .large {
     width: 62%;
@@ -45,6 +44,21 @@ h1, h2 {
 
 .bloc-droite {
     float: right;
+}
+
+.bloc-millieu {
+    float: none;
+}
+
+.rangee {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tiers {
+width: 30%;
 }
 
 .clearfix::after {
@@ -67,6 +81,10 @@ h1, h2 {
 
 .bloc-nice h3 {
     color: #c4631a;
+}
+
+.bloc-monpellier{
+    background-color:aquamarine
 }
 
 .bloc-offre {
@@ -101,6 +119,7 @@ h1, h2 {
 .bloc-nice      { border-color: #c4631a; }
 .bloc-offre     { border-color: #1f7a45; }
 .bloc-promo     { border-color: #a8561a; }
+.bloc-monpellier{ border-color: rgb(13, 100, 230); }
 
 .bloc {
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.25);
@@ -120,8 +139,7 @@ h1, h2 {
 
 .bloc .img-gauche {
     float: left;
-    height: 110%;
-    width: 40%;
+    width: 55%;
     margin: 0 18px 10px 0;
 }
 
@@ -181,19 +199,20 @@ footer address {
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
+.bloc:hover {
+     box-shadow: 6px 10px 18px rgba(0,0,0,0.35); 
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
-    .carte img {
-        height: 160px;
+@media (max-width: 700px) {
+    .moitie, .large, .etroit {
+        width: 100%;
+    }
+    .bloc-gauche, .bloc-droite {
+        float: none;
+    }
+    .logo, nav {
+        float: none;
+        text-align: center;
     }
 }
-
